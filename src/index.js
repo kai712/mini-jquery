@@ -1,4 +1,8 @@
 import Utils from './utils'
+import Callbacks from './callbacks'
+import Deferred from './deferred'
+import When from './when'
+import Attributes from './attributes'
 
 
 (function(window, undefined){
@@ -9,14 +13,17 @@ import Utils from './utils'
     jq.fn = jq.prototype = {
         constructor: jq,
         init: function(selector){
-            var elem;
+            var elem,
+                length;
             if(!selector) {
                 return this
             }
            
             if(typeof selector === 'string') {
                 elem = document.querySelectorAll(selector.trim());
+                length = elem.length;
                 elem.__proto__ = jq.fn;
+                elem.length = length;
             } else if (typeof selector === 'function'){
                 return jq(document).ready(selector);
             }
@@ -61,7 +68,20 @@ import Utils from './utils'
         }
         return target;
     },
-    jq.extend(Utils)
+    jq.fn.extend({
+        each: function(callback) {
+            return jq.each(this, callback)
+        }
+    })
+    //扩展工具
+    jq.extend(Utils);
+    //扩展callbacks、deferred、when
+    jq.extend({
+        Callbacks: Callbacks,
+        deferred: Deferred,
+        when: When
+    });
+    jq.fn.extend(Attributes)
 
     window.jq = window.$ = jq;
 
