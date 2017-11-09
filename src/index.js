@@ -3,6 +3,8 @@ import Callbacks from './callbacks'
 import Deferred from './deferred'
 import When from './when'
 import Attributes from './attributes'
+import Traversing from './traversing'
+import Manipulates from './manipulates'
 
 
 (function(window, undefined){
@@ -81,8 +83,12 @@ import Attributes from './attributes'
         deferred: Deferred,
         when: When
     });
-    jq.fn.extend(Attributes)
+
+    jq.fn.extend(Attributes);
+    jq.fn.extend(Traversing);
+    jq.fn.extend(Manipulates);
 
     window.jq = window.$ = jq;
+
 
 })(window)
