@@ -8,7 +8,7 @@ import {
 
 export default {
     //设置或者读取HTML属性
-    //备注：prop读取的是HTML属性
+    //备注：attr读取的是HTML属性
     attr: function(name, val) {
         var nType,
             args = Array.prototype.slice.call(this,0),
