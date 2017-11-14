@@ -26,8 +26,6 @@ import Manipulates from './manipulates'
                 length = elem.length;
                 elem.__proto__ = jq.fn;
                 elem.length = length;
-            } else if (typeof selector === 'function'){
-                return jq(document).ready(selector);
             }
 
             return elem
@@ -80,7 +78,7 @@ import Manipulates from './manipulates'
     //扩展callbacks、deferred、when
     jq.extend({
         Callbacks: Callbacks,
-        deferred: Deferred,
+        Deferred: Deferred,
         when: When
     });
 
