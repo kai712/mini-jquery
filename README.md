@@ -20,3 +20,7 @@
 ### 延迟对象Deferred
 
 实现deferred功能，如done、fail、progress、always、resolve、reject、state、promise等方法
+
+### 缓存对象Data
+
+实现data缓存，如data、removeData等方法
