@@ -1,10 +1,10 @@
 import Utils from './utils'
 import Callbacks from './callbacks'
 import Deferred from './deferred'
-import When from './when'
 import Attributes from './attributes'
 import Traversing from './traversing'
 import Manipulates from './manipulates'
+import DataCache from './data-cache'
 
 
 (function(window, undefined){
@@ -78,13 +78,13 @@ import Manipulates from './manipulates'
     //扩展callbacks、deferred、when
     jq.extend({
         Callbacks: Callbacks,
-        Deferred: Deferred,
-        when: When
+        Deferred: Deferred
     });
 
     jq.fn.extend(Attributes);
     jq.fn.extend(Traversing);
     jq.fn.extend(Manipulates);
+    jq.fn.extend(DataCache);
 
     window.jq = window.$ = jq;
 
