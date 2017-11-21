@@ -57,6 +57,10 @@ import DataCache from './data-cache'
 
             if ((options = arguments[i]) != null) {
                 for (name in options) {
+                    // Prevent never-ending loop
+                    if ( target === copy ) {
+                        continue;
+                    }
                     if(deep && typeof (options[name])==="object") {
                         jq.extend(deep, target[name], options[name])
                     } else {
