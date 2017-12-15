@@ -1,8 +1,3 @@
-## 模拟jquery库实现的功能列表
- 
-  
-   
-    
 ####  属性操作
 
 > 如attr,prop,addClass,removeClass,toggleClass,hasClass,val等方法
