@@ -1,23 +1,70 @@
-####  属性操作
 
-> 如attr,prop,addClass,removeClass,toggleClass,hasClass,val等方法
+####  Attribute methods
 
-#### DOM操作
+- [x] [.attr()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-> 实现了DOM操作的append, prepend, before, after, html, text等方法
+- [x] [.prop()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-#### DOM遍历
+- [x] [.addClass()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-> 实现DOM遍历的parents方法
+- [x] [.removeClass()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-#### 回调对象Callbacks
+- [x] [.toggleClass()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-> 实现了回调对象可传的四个参数状态，如once, memory, unique, stopOnFalse,以及add(),fire(),fireWith(),remove(),empty(),has()等方法。
+- [x] [.hasClass()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-#### 延迟对象Deferred
+- [x] [.val()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
 
-> 实现deferred功能，如done、fail、progress、always、resolve、reject、state、promise等方法
+####  DOM methods
 
-#### 缓存对象Data
+- [x] [.append()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
 
-> 实现data缓存，如data、removeData等方法
+- [x] [.prepend()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
+
+- [x] [.before()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
+
+- [x] [.after()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
+
+- [x] [.html()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
+
+- [x] [.text()](https://github.com/SunShineKG/mini-jquery/blob/master/src/manipulates.js)
+
+- [x] [.parents()](https://github.com/SunShineKG/mini-jquery/blob/master/src/traversing.js)
+
+####  Callbacks
+
+- [x] [.add()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+- [x] [.fire()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+- [x] [.fireWith()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+- [x] [.remove()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+- [x] [.empty()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+- [x] [.has()](https://github.com/SunShineKG/mini-jquery/blob/master/src/callbacks.js)
+
+####  Deferred
+
+- [x] [.done()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.fail()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.progress()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.always()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.resolve()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.reject()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.state()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+- [x] [.promise()](https://github.com/SunShineKG/mini-jquery/blob/master/src/deferred.js)
+
+####  cache Data
+
+- [x] [.data()](https://github.com/SunShineKG/mini-jquery/blob/master/src/data-cache.js)
+
+- [x] [.removeData()](https://github.com/SunShineKG/mini-jquery/blob/master/src/data-cache.js)
