@@ -1,4 +1,11 @@
 
+为了能够更好的理解jquery源码，自己动手实现的一个简易版的jquery
+
+## API
+The usage is the same as the official.[api doc](https://api.jquery.com/) or [中文版api](http://jquery.cuishifeng.cn/)
+
+Click to jump directly to the corresponding file
+
 ####  Attribute methods
 
 - [x] [.attr()](https://github.com/SunShineKG/mini-jquery/blob/master/src/attributes.js)
